@@ -1,4 +1,4 @@
-from checkio_referee import RefereeBase
+from checkio_referee import RefereeBase, representations
 
 import settings
 import settings_env
@@ -9,6 +9,11 @@ cover = """def cover(func, data):
 """
 
 
+def repr(data, f):
+    t = data["input"]
+    return "{}({}, {}, {})".format(f, tuple(tuple(row) for row in t), t[1], t[2])
+
+
 class Referee(RefereeBase):
     TESTS = TESTS
     EXECUTABLE_PATH = settings.EXECUTABLE_PATH
@@ -17,5 +22,10 @@ class Referee(RefereeBase):
     ENV_COVERCODE = {
         "python_2": cover,
         "python_3": cover,
+        "javascript": representations.unwrap_arg_representation
+    }
+    CALLED_REPRESENTATIONS = {
+        "python_2": repr,
+        "python_3": repr,
         "javascript": None
     }
