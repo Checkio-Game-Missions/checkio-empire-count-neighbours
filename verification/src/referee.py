@@ -16,9 +16,9 @@ def repr(data, f):
 
 class Referee(RefereeBase):
     TESTS = TESTS
-    EXECUTABLE_PATH = settings.EXECUTABLE_PATH
-    CURRENT_ENV = settings_env.CURRENT_ENV
-    FUNCTION_NAME = "count_neighbours"
+    ENVIRONMENTS = settings_env.ENVIRONMENTS
+
+    DEFAULT_FUNCTION_NAME = "count_neighbours"
     ENV_COVERCODE = {
         "python_2": cover,
         "python_3": cover,

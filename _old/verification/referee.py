@@ -46,7 +46,7 @@ api.add_listener(
             'python-27': cover,
             'python-3': cover
         },
-        function_name="count_neighbours"
+        DEFAULT_FUNCTION_NAME="count_neighbours"
         # checker=None,  # checkers.float.comparison(2)
         # add_allowed_modules=[],
         # add_close_builtins=[],
