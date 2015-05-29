@@ -11,7 +11,7 @@ cover = """def cover(func, data):
 
 def repr(data, f):
     t = data["input"]
-    return "{}({}, {}, {})".format(f, tuple(tuple(row) for row in t), t[1], t[2])
+    return "{}({}, {}, {})".format(f, tuple(tuple(row) for row in t[0]), t[1], t[2])
 
 
 class Referee(RefereeBase):
