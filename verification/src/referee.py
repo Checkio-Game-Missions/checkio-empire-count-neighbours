@@ -30,5 +30,5 @@ class Referee(RefereeBase):
     }
     CALLED_REPRESENTATIONS = {
         ENV_NAME.PYTHON: repr,
-        ENV_NAME.JS_NODE: representations.unwrap_arg_representation()
+        ENV_NAME.JS_NODE: representations.unwrap_arg_representation
     }
