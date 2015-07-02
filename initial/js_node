@@ -8,20 +8,20 @@ var assert = require('assert');
 
 if (!global.is_checking) {
     // These "asserts" using only for self-checking and not necessary for auto-testing
-    assert.equal(count_neighbours([[1, 0, 0, 1, 0],
-                                   [0, 1, 0, 0, 0],
-                                   [0, 0, 1, 0, 1],
-                                   [1, 0, 0, 0, 0],
-                                   [0, 0, 1, 0, 0]], 1, 2), 3, "1st example");
-    assert.equal(count_neighbours([[1, 0, 0, 1, 0],
-                                   [0, 1, 0, 0, 0],
-                                   [0, 0, 1, 0, 1],
-                                   [1, 0, 0, 0, 0],
-                                   [0, 0, 1, 0, 0]], 0, 0), 1, "2nd example");
-    assert.equal(count_neighbours([[1, 1, 1],
-                                   [1, 1, 1],
-                                   [1, 1, 1]], 0, 2), 3, "Dense corner");
-    assert.equal(count_neighbours([[0, 0, 0],
-                                   [0, 1, 0],
-                                   [0, 0, 0]], 1, 1), 0, "Single");
+    assert.equal(countNeighbours([[1, 0, 0, 1, 0],
+                                  [0, 1, 0, 0, 0],
+                                  [0, 0, 1, 0, 1],
+                                  [1, 0, 0, 0, 0],
+                                  [0, 0, 1, 0, 0]], 1, 2), 3, "1st example");
+    assert.equal(countNeighbours([[1, 0, 0, 1, 0],
+                                  [0, 1, 0, 0, 0],
+                                  [0, 0, 1, 0, 1],
+                                  [1, 0, 0, 0, 0],
+                                  [0, 0, 1, 0, 0]], 0, 0), 1, "2nd example");
+    assert.equal(countNeighbours([[1, 1, 1],
+                                  [1, 1, 1],
+                                  [1, 1, 1]], 0, 2), 3, "Dense corner");
+    assert.equal(countNeighbours([[0, 0, 0],
+                                  [0, 1, 0],
+                                  [0, 0, 0]], 1, 1), 0, "Single");
 }
