@@ -55,7 +55,7 @@ Every cell interacts with its eight neighbours; those cells that are horizontall
 For the given examples (see the schema) there is the same grid:
 
 ```
-((1, 0, 0, 1, 0),
+((1, 0, 1, 0, 0),
  (0, 1, 0, 0, 0),
  (0, 0, 1, 0, 1),
  (1, 0, 0, 0, 0),
