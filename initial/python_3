@@ -20,3 +20,4 @@ if __name__ == '__main__':
     assert count_neighbours(((0, 0, 0),
                              (0, 1, 0),
                              (0, 0, 0),), 1, 1) == 0, "Single"
+    print("Code's finished? Earn rewards by clicking 'Check' to review your tests!")
